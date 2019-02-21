@@ -1,0 +1,19 @@
+{
+  "name": "reduxexample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build-dev": "cd client && npm run build-dev && cd ..",
+    "build": "cd client && npm run build && cd ..",
+    "nm": "npm run build && nodemon server.js",
+    "dev": "npm run build-dev && nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
